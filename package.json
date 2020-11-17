@@ -21,7 +21,7 @@
   ],
   "license": "ISC",
   "main": "/dist/is.js",
-  "name": "is-js",
+  "name": "@heretic-labs/is-js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PseudoNinja/is-js.git"

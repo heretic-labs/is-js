@@ -1,62 +1,68 @@
 /**
  * @fileoverview "IS JavaScript Evaluation Helpers"
+*/
+
+/**
+ * @description Is True
+ * @param {object} obj
  */
-let is = {
-    /**
-     * @description Is True
-     * @param {object} obj
-     */
-    true: function (obj) {
-        return (
-            (this.boolean(obj) && obj === true) ||
-            (this.string(obj) && obj === "true") ||
-            (this.number(obj) && obj === 1)
-        );
-    },
-    /**
-     * @description Is Boolean
-     * @param {object} obj
-     */
-    boolean: function (obj) {
-        return typeof obj === "boolean";
-    },
-    /**
-     * @description Is String
-     * @param {object} obj
-     */
-    string: function (obj) {
-        return typeof obj === "string";
-    },
-    /**
-     * @description Is Number
-     * @param {object} obj
-     */
-    number: function (obj) {
-        return !isNaN(obj);
-    },
-    /**
-     * @description Is Undefined
-     * @param {object} obj
-     */
-    undefined: function (obj) {
-        return typeof obj === "undefined";
-    },
-    /**
-     * @description Is Null
-     * @param {object} obj
-     */
-    null: function (obj) {
-        return obj === null;
-    },
-    /**
-     * @description Is Empty
-     * @param {object} obj
-     */
-    empty: function (obj) {
-        return (
-            this.undefined(obj) ||
-            this.null(obj) ||
-            (this.string(obj) && obj.trim().length > 0)
-        );
-    },
-};
+export function isTrue(obj) {
+    return (
+        (this.boolean(obj) && obj === true) ||
+        (this.string(obj) && obj === "true") ||
+        (this.number(obj) && obj === 1)
+    );
+}
+
+
+/**
+ * @description Is Boolean
+ * @param {object} obj
+ */
+export function isBoolean(obj) {
+    return typeof obj === "boolean";
+}
+
+/**
+ * @description Is String
+ * @param {object} obj
+ */
+export function isString(obj) {
+    return typeof obj === "string";
+}
+
+/**
+ * @description Is Number
+ * @param {object} obj
+ */
+export function isNumber(obj) {
+    return !isNaN(obj);
+}
+
+/**
+ * @description Is Undefined
+ * @param {object} obj
+ */
+export function isUndefined(obj) {
+    return typeof obj === "undefined";
+}
+
+/**
+ * @description Is Null
+ * @param {object} obj
+ */
+export function isNull(obj) {
+    return obj === null;
+}
+
+/**
+ * @description Is Empty
+ * @param {object} obj
+ */
+export function isEmpty(obj) {
+    return (
+        isUndefined(obj) ||
+        isNull(obj) ||
+        (isString(obj) && obj.trim().length > 0)
+    );
+}

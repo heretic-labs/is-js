@@ -1,6 +1,5 @@
 'use strict';
 
-import { isTrue } from '../src/is';
 
 describe('IS Library', function () {
 

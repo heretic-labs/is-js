@@ -20,7 +20,7 @@
     "javascript"
   ],
   "license": "ISC",
-  "main": "/dist/is.js",
+  "main": "dist/is.js",
   "name": "is-js",
   "repository": {
     "type": "git",

@@ -1,40 +1,42 @@
 'use strict';
 
+const Is = require('../src/is');
 
 describe('IS Library', function () {
+    const is = new Is();
 
     beforeAll(function () {
-        console.log('Starting tests');
+        //console.log('Starting tests');
     });
 
     afterAll(function () {
-        console.log('done');
+        //console.log('done');
     });
 
     beforeEach(function () {
-        console.log('starting new test');
+        //console.log('starting new test');
     });
 
     afterEach(function () {
-        console.log('test finished.');
+        //console.log('test finished.');
     });
 
     it('is true', function () {
-        expect(isTrue(true).toBe(true));
+        expect(is.True(true).toBe(true));
     });
     it('is true(string)', function () {
-        expect(isTrue('true').toBe(true));
+        expect(is.True('true').toBe(true));
     });
     it('is true(int)', function () {
-        expect(isTrue(1).toBe(true));
+        expect(is.True(1).toBe(true));
     });
     it('is false', function () {
-        expect(isTrue(false).toBe(false));
+        expect(is.True(false).toBe(false));
     });
     it('is false(string)', function () {
-        expect(isTrue('false').toBe(false));
+        expect(is.True('false').toBe(false));
     });
     it('is false(int)', function () {
-        expect(isTrue(0).toBe(false));
+        expect(is.True(0).toBe(false));
     });
 });

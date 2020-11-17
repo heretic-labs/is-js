@@ -11,7 +11,7 @@ class Is {
     True = function (obj) {
         return (
             (this.Boolean(obj) && obj === true) ||
-            (this.String(obj) && obj === "true") ||
+            (this.String(obj) && Array('true', '1').includes(obj)) ||
             (this.Number(obj) && obj === 1)
         );
     }

@@ -1,0 +1,25 @@
+{
+  "name": "is-js",
+  "version": "1.0.0",
+  "description": "JavaScript Evaluation Helpers Library",
+  "main": "/dist/is.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PseudoNinja/is-js.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Eric Miller <eric@pseudoninja.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PseudoNinja/is-js/issues"
+  },
+  "homepage": "https://github.com/PseudoNinja/is-js#readme"
+}

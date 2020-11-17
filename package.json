@@ -20,8 +20,8 @@
     "javascript"
   ],
   "license": "ISC",
-  "main": "dist/is.js",
-  "name": "is-js",
+  "main": "/dist/is.js",
+  "name": "@heretic-labs/is-js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PseudoNinja/is-js.git"
@@ -30,5 +30,5 @@
     "test": "jasmine",
     "gulp": "node ./node_modules/gulp/bin/gulp.js php"
   },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }

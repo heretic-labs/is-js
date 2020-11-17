@@ -62,11 +62,21 @@ class Is {
      * @param {object} obj
      */
     Empty = function (obj) {
-        return (
-            Undefined(obj) ||
-            Null(obj) ||
-            (String(obj) && obj.trim().length > 0)
-        );
+        let e = false;
+        try {
+            if (this.Undefined(obj)) {
+                throw 'is undefined';
+            }
+            if (this.Null(obj)) {
+                throw 'is null';
+            }
+            if (this.String(obj) && obj.trim().length === 0) {
+                throw 'is empty string';
+            }
+        } catch (ex) {
+            e = true;
+        }
+        return e;
     }
 }
 

@@ -1,7 +1,7 @@
 {
   "author": "Eric Miller <eric@pseudoninja.com>",
   "bugs": {
-    "url": "https://github.com/PseudoNinja/is-js/issues"
+    "url": "https://github.com/heretic-labs/is-js/issues"
   },
   "description": "JavaScript Evaluation Helpers Library",
   "devDependencies": {
@@ -15,7 +15,7 @@
   "directories": {
     "test": "tests"
   },
-  "homepage": "https://github.com/PseudoNinja/is-js#readme",
+  "homepage": "https://github.com/heretic-labs/is-js#readme",
   "keywords": [
     "javascript"
   ],
@@ -24,7 +24,7 @@
   "name": "@heretic-labs/is-js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PseudoNinja/is-js.git"
+    "url": "git+https://github.com/heretic-labs/is-js.git"
   },
   "scripts": {
     "test": "jasmine",
